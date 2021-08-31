@@ -120,13 +120,6 @@
                             </div>
                         </div>
     
-                        <div class="home__scroll">
-                            <a href="#about" class="home__scroll-button button--flex">
-                                <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                                <span class="home__scroll-name">Scroll down</span>
-                                <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                            </a>
-                        </div>
                     </div>
                     
                 </section>
@@ -135,8 +128,8 @@
 
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
-                <h2 class="section__title">About Me</h2>
-                <span class="section__subtitle">My introduction</span>
+                <h2 class="section__title you">About Me</h2>
+                <span class="section__subtitle you">My introduction</span>
 
                 <div class="about__container container grid">
                     <img src="assets/img/code.png" alt="" class="about__img">
@@ -663,10 +656,10 @@ if the weather is nice, I play basketball!
 
                         <!--==================== PORTFOLIO 3 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+                            <img src="assets/img/landingpage.png" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">Online Store</h3>
+                                <h3 class="portfolio__title">Responsive landing page</h3>
                                 <p class="portfolio__description">Website adaptable to all 
                                     devices, with ui components and animated interactions.</p>
                                 <a href="#" class="button button--flex button--small portfolio__button">
@@ -863,32 +856,34 @@ if the weather is nice, I play basketball!
                     </div>
 
 
-                    <form action="" class="contact__form grid">
+                    <form action="https://formsubmit.co/roberthjot@gmail.com" method="POST" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                                <input type="hidden" name="_subject" value="New email!">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="text" name="name" required class="contact__input">
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <input type="email" name="email" placeholder="Email Address" class="contact__input">
                             </div>
                         </div>
 
                         <div class="contact__content">
                             <label for="" class="contact__label">Project</label>
-                            <input type="text" class="contact__input">
+                            <input type="text" name="project" class="contact__input">
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="0" cols="7" rows="10" class="contact__input"></textarea>
+                            <textarea name="message" id="0" cols="7" rows="10" class="contact__input"></textarea>
                         </div>
 
                         <div>
-                            <a href="#" class="button button--flex">
-                                Send Message
+                            <button type="submit" class="button button--flex">
+                                  Send Message
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </button>
                         </div>
                     </form> 
                 </div>
@@ -943,6 +938,8 @@ if the weather is nice, I play basketball!
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>

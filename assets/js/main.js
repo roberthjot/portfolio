@@ -195,3 +195,26 @@ themeButton.addEventListener('click', ()=>{
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*==================== GSAP ====================*/ 
+
+let t1 =gsap.timeline({
+    repeat: 0,
+});
+
+t1.from('.home__title, .home__blob, .home__social, .home__subtitle, .home__description',{
+    duration: 3,
+    y: -500,
+    delay: 1,
+    ease: 'bounce.out',
+});
+
+t1.from('.you',{
+    duration: 3,
+    x: -500,
+    delay: 1,
+    ease: 'bounce.out',
+},
+'-=1.5');
+
+
