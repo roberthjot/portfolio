@@ -335,6 +335,8 @@ img{
 
 /*==================== BUTTONS ====================*/
 .button{
+    width: max-content;
+    justify-self: center;
     display: inline-block;
     background-color: var(--first-color);
     color: #FFF;

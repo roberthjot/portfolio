@@ -196,6 +196,7 @@ themeButton.addEventListener('click', ()=>{
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+
 /*==================== GSAP ====================*/ 
 
 let t1 =gsap.timeline({
