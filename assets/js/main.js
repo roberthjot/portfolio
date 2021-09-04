@@ -199,23 +199,31 @@ themeButton.addEventListener('click', ()=>{
 
 /*==================== GSAP ====================*/ 
 
-let t1 =gsap.timeline({
-    repeat: 0,
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 2000,
+    reset: true
 });
 
-t1.from('.home__title, .home__blob, .home__social, .home__subtitle, .home__description',{
-    duration: 3,
-    y: -500,
-    delay: 1,
-    ease: 'bounce.out',
-});
+sr.reveal(`.home__title, .home__blob, .home__social, .home__subtitle, 
+.home__description, .you, .about__description, .about__info, .about__buttons, 
+.section__title, .section__subtitle, .qualification, .services__content, 
+.project__container, .testimonial, .footer__bg, 
+.contact__container`, {
+    interval: 200
+})
 
-t1.from('.you',{
-    duration: 3,
-    x: -500,
-    delay: 1,
-    ease: 'bounce.out',
-},
-'-=1.5');
+sr.reveal(`.project__container`, {
+    origin: 'left'
+})
+
+sr.reveal(`.contact__container`,{
+    origin: 'right'
+})
+
+  
+
+
 
 
