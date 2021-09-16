@@ -197,7 +197,7 @@ themeButton.addEventListener('click', ()=>{
 })
 
 
-/*==================== GSAP ====================*/ 
+/*==================== ScrollReveal ====================*/ 
 
 const sr = ScrollReveal({
     origin: 'top',
@@ -208,7 +208,8 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home__title, .home__blob, .home__social, .home__subtitle, 
 .home__description, .you, .about__description, .about__info, .about__buttons, 
-.section__title, .section__subtitle, .qualification, .services__content, 
+.section__title, .section__subtitle, .qualification, .services__title,
+.services__icon,
 .project__container, .testimonial, .footer__bg, 
 .contact__container`, {
     interval: 200
