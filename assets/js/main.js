@@ -209,19 +209,13 @@ const sr = ScrollReveal({
 sr.reveal(`.home__title, .home__blob, .home__social, .home__subtitle, 
 .home__description, .you, .about__description, .about__info, .about__buttons, 
 .section__title, .section__subtitle, .qualification, .services__title,
-.services__icon,
+.services__icon, .project__container, .contact__container
 .project__container, .testimonial, .footer__bg, 
 .contact__container`, {
     interval: 200
 })
 
-sr.reveal(`.project__container`, {
-    origin: 'left'
-})
 
-sr.reveal(`.contact__container`,{
-    origin: 'right'
-})
 
   
 
