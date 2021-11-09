@@ -495,11 +495,13 @@ img{
 .skills__css{
     width: 80%;
 }
-.skills__js{
-    width: 60%;
-}
+
 .skills__bootstrap{
     width: 85%;
+}
+
+.skills__sass{
+    width: 70%;
 }
 
 
